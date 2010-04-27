@@ -25,9 +25,9 @@ Gem::Specification.new do |s|
   ## List the primary authors. If there are a bunch of authors, it's probably
   ## better to set the email to an email list or something. If you don't have
   ## a custom homepage, consider using your GitHub URL or the like.
-  s.authors  = ["John Doe"]
-  s.email    = 'jdoe@example.com'
-  s.homepage = 'http://example.com/NAME'
+  s.authors  = ["geemus (Wesley Beary)"]
+  s.email    = 'geemus@gmail.com'
+  s.homepage = 'http://github.com/geemus/NAME'
 
   ## This gets added to the $LOAD_PATH so that 'lib/NAME.rb' can be required as
   ## require 'NAME.rb' or'/lib/NAME/file.rb' can be as require 'NAME/file.rb'
@@ -63,5 +63,5 @@ Gem::Specification.new do |s|
 
   ## Test files will be grabbed from the file list. Make sure the path glob
   ## matches what you actually use.
-  s.test_files = s.files.select { |path| path =~ /^test\/test_.*\.rb/ }
+  s.test_files = s.files.select { |path| path =~ /^[spec|tests]\/.*_[spec|tests]\.rb/ }
 end
