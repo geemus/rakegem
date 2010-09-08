@@ -45,11 +45,8 @@ end
 
 task :default => :test
 
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
+task :test do
+  sh "bundle exec shindo tests"
 end
 
 desc "Generate RCov test coverage and open in your browser"
